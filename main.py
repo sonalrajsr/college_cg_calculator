@@ -28,12 +28,14 @@ sem_cred_list = [sem_1_cred, sem_2_cred, sem_3_cred, sem_4_cred, sem_5_cred, sem
 sem_cg_list = [sem_1_cg, sem_2_cg, sem_3_cg, sem_4_cg,sem_5_cg,sem_6_cg,sem_7_cg,sem_8_cg]
 
 def sgpa(sem_number):
+    sem_number = input("Enter the semester number for which you want to calculate sgpa. ")
     credit = sem_cred_list[sem_number-1]
     cg = sem_cg_list[sem_number-1]
     sgpa = (cg*credit)/credit
     return sgpa
 
 def cgpa(sem_number):
+    sem_number = input("Enter the semester number till which you want to calculate cgpa. ")
     total_cred = 0
     total_cg = 0
     for i in range(0,sem_number):
