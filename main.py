@@ -43,4 +43,4 @@ def cgpa(sem_number):
     return comm_cg
 
 print("Your cgpa = ",cgpa(1))
-print("Your sgpa = "sgpa(1))
+print("Your sgpa = ",sgpa(1))
